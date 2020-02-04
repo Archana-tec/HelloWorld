@@ -1,0 +1,9 @@
+from __future__ import unicode_literals
+import youtube_dl
+
+ydl_opts = {}
+#'outtmpl': 'somewhere/%(extractor_key)s/%(extractor)s-%(id)s-%(title)s.%(ext)s'
+# by default it downloads from where you are running the program
+
+with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    ydl.download(['https://youtu.be/DZ7xuZ1-uh8'])
